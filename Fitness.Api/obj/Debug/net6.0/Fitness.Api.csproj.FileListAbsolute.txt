@@ -30,3 +30,5 @@ C:\Users\Francisco\Projetos\Fitness\Fitness.Api\obj\Debug\net6.0\refint\Fitness.
 C:\Users\Francisco\Projetos\Fitness\Fitness.Api\obj\Debug\net6.0\Fitness.Api.pdb
 C:\Users\Francisco\Projetos\Fitness\Fitness.Api\obj\Debug\net6.0\Fitness.Api.genruntimeconfig.cache
 C:\Users\Francisco\Projetos\Fitness\Fitness.Api\obj\Debug\net6.0\ref\Fitness.Api.dll
+C:\Users\Francisco\Projetos\Fitness\Fitness.Api\bin\Debug\net6.0\Fitness.ServiceLibrary.dll
+C:\Users\Francisco\Projetos\Fitness\Fitness.Api\bin\Debug\net6.0\Fitness.ServiceLibrary.pdb

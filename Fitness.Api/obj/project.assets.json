@@ -95,6 +95,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Fitness.ServiceLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Fitness.ServiceLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Fitness.ServiceLibrary.dll": {}
+        }
       }
     }
   },
@@ -517,10 +527,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Fitness.ServiceLibrary/1.0.0": {
+      "type": "project",
+      "path": "../Fitness.ServiceLibrary/Fitness.ServiceLibrary.csproj",
+      "msbuildProject": "../Fitness.ServiceLibrary/Fitness.ServiceLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Fitness.ServiceLibrary >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.4",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -556,7 +572,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Francisco\\Projetos\\Fitness\\Fitness.ServiceLibrary\\Fitness.ServiceLibrary.csproj": {
+              "projectPath": "C:\\Users\\Francisco\\Projetos\\Fitness\\Fitness.ServiceLibrary\\Fitness.ServiceLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
