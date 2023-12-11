@@ -18,4 +18,5 @@ dotnet watch run
 ### to create react app
 
 npm install create-react-app
-npx create-react-app front --template typescript
+
+npx create-react-app fitnessfront --template typescript
