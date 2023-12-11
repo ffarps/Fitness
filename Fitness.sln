@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitness.Api", "Fitness.Api\Fitness.Api.csproj", "{6BDA15D0-1C3D-449F-912E-3A12CC323A75}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{829D7853-CA8E-4B8F-98EC-852D598D4D54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitness.ServiceLibrary", "Fitness.ServiceLibrary\Fitness.ServiceLibrary.csproj", "{AB454B5A-4B48-4D5F-A272-6D9707727027}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3845EF67-19DD-4FB7-8309-676354FFD2D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63E53EA6-E789-48CA-B56D-8F968FA68C4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitness.Api", "src\Fitness.Api\Fitness.Api.csproj", "{4B950088-EC23-4187-B5AC-E0F987DB1B7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitness.ServiceLibrary", "src\Fitness.ServiceLibrary\Fitness.ServiceLibrary.csproj", "{81717E28-840D-495B-95BB-49B8BC137489}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{93F09F0D-CEB6-4E10-8045-3F3EB0AF899A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,24 +21,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6BDA15D0-1C3D-449F-912E-3A12CC323A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BDA15D0-1C3D-449F-912E-3A12CC323A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BDA15D0-1C3D-449F-912E-3A12CC323A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BDA15D0-1C3D-449F-912E-3A12CC323A75}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-		{2F0AB05A-BC0C-4DDB-AD37-4AFC26D5C66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F0AB05A-BC0C-4DDB-AD37-4AFC26D5C66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F0AB05A-BC0C-4DDB-AD37-4AFC26D5C66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F0AB05A-BC0C-4DDB-AD37-4AFC26D5C66E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB454B5A-4B48-4D5F-A272-6D9707727027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB454B5A-4B48-4D5F-A272-6D9707727027}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB454B5A-4B48-4D5F-A272-6D9707727027}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB454B5A-4B48-4D5F-A272-6D9707727027}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> parent of fe42cb9 (update docker files)
+		{4B950088-EC23-4187-B5AC-E0F987DB1B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B950088-EC23-4187-B5AC-E0F987DB1B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B950088-EC23-4187-B5AC-E0F987DB1B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B950088-EC23-4187-B5AC-E0F987DB1B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81717E28-840D-495B-95BB-49B8BC137489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81717E28-840D-495B-95BB-49B8BC137489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81717E28-840D-495B-95BB-49B8BC137489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81717E28-840D-495B-95BB-49B8BC137489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F09F0D-CEB6-4E10-8045-3F3EB0AF899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F09F0D-CEB6-4E10-8045-3F3EB0AF899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F09F0D-CEB6-4E10-8045-3F3EB0AF899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F09F0D-CEB6-4E10-8045-3F3EB0AF899A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B950088-EC23-4187-B5AC-E0F987DB1B7D} = {63E53EA6-E789-48CA-B56D-8F968FA68C4F}
+		{81717E28-840D-495B-95BB-49B8BC137489} = {63E53EA6-E789-48CA-B56D-8F968FA68C4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B719A226-33B7-4F09-AE5D-F2F14686CDF5}
