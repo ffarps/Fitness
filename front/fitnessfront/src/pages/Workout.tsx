@@ -1,9 +1,9 @@
-function App() {
+function Workout() {
     return (
       <div className="Workout">Workout
       </div>
     );
   }
   
-  export default App;
+  export default Workout;
   

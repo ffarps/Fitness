@@ -1,9 +1,9 @@
-function App() {
+function Profile() {
     return (
       <div className="Profile">Profile
       </div>
     );
   }
   
-  export default App;
+  export default Profile;
   

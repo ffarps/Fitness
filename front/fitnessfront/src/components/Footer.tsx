@@ -1,9 +1,9 @@
-function App() {
+function Footer() {
     return (
       <div className="Footer">Footer
       </div>
     );
   }
   
-  export default App;
+  export default Footer;
   

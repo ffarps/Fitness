@@ -1,9 +1,10 @@
-function App() {
+function Header() {
     return (
-      <div className="Header">Header
+      <div className="Header">
+        Fitness Tracker Header
       </div>
     );
   }
   
-  export default App;
+  export default Header;
   
