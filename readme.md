@@ -14,3 +14,8 @@ dotnet watch run
 
 # Architecture diagram
 ![alt text](arch.drawio.png)
+
+### to create react app
+
+npm install create-react-app
+npx create-react-app --template typescript
