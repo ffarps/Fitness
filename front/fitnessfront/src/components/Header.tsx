@@ -1,11 +1,11 @@
+import logo192 from "../logo.svg";
 function Header() {
   const flexBetween = "flex items-center justify-between";
   return (
     <div className="Header">
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
-          APP LOGO
-          {/* <img></img> */}
+          <img src={logo192} alt="logo" width={75}></img>
           <div className={`${flexBetween} w-full`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
               <p>Home</p>
