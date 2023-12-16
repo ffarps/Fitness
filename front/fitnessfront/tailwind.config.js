@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "react-blue":"#61DAFB",
         "gray-20": "#F8F4EB",
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
@@ -21,6 +22,8 @@ module.exports = {
       fontFamily: {
         dmsans: ["DMSans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        FugazOne:["Fugaz One","sans-serif"],
+        OpenSans:['Open Sans', "sans-serif"],
       },
       content: {
 
