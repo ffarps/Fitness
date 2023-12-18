@@ -1,5 +1,11 @@
 import logo from "../assests/logo.png";
-function Header() {
+import { SelectedPage } from "../shared/types";
+import Link from "./Link";
+type Props = {
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void;
+};
+function Header({ selectedPage, setSelectedPage }: Props) {
   const flexBetween = "flex items-center justify-between";
   return (
     <div className="Header">
@@ -9,9 +15,21 @@ function Header() {
           <div className={`${flexBetween} w-full`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
               {/* <p>Home</p> */}
-              <p>Workouts</p>
-              <p>Profile</p>
-              <p>Contact us</p>
+              <Link
+                page="Workout"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Profile"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact us"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </div>
             <div className={`${flexBetween} gap-8`}>
               <p>Sign in</p>
