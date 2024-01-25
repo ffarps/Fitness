@@ -1,10 +1,12 @@
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Workout from "./pages/Workout";
+import WorkoutSection from "./pages/Workout";
 function App() {
   return (
     <div className="App">
       <Home />
-      <Workout />
+      <WorkoutSection></WorkoutSection>
+      <Footer></Footer>
     </div>
   );
 }

@@ -16,7 +16,7 @@ function Header({ selectedPage, setSelectedPage }: Props) {
             <div className={`${flexBetween} gap-8 text-sm`}>
               {/* <p>Home</p> */}
               <Link
-                page="Workout"
+                page="Workouts"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
