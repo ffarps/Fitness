@@ -13,6 +13,7 @@ function Header({ selectedPage, setSelectedPage }: Props) {
         <div className={`${flexBetween} w-full gap-16`}>
           <img src={logo} alt="logo" width={150}></img>
           <div className={`${flexBetween} w-full`}>
+            
             <div className={`${flexBetween} gap-8 text-sm`}>
               {/* <p>Home</p> */}
               <Link

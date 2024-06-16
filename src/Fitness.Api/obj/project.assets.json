@@ -542,39 +542,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Francisco\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/ff/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Francisco\\Projetos\\Fitness\\src\\Fitness.Api\\Fitness.Api.csproj",
+      "projectUniqueName": "/home/ff/Projects/Fitness/src/Fitness.Api/Fitness.Api.csproj",
       "projectName": "Fitness.Api",
-      "projectPath": "C:\\Users\\Francisco\\Projetos\\Fitness\\src\\Fitness.Api\\Fitness.Api.csproj",
-      "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Francisco\\Projetos\\Fitness\\src\\Fitness.Api\\obj\\",
+      "projectPath": "/home/ff/Projects/Fitness/src/Fitness.Api/Fitness.Api.csproj",
+      "packagesPath": "/home/ff/.nuget/packages/",
+      "outputPath": "/home/ff/Projects/Fitness/src/Fitness.Api/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/ff/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Francisco\\Projetos\\Fitness\\src\\Fitness.ServiceLibrary\\Fitness.ServiceLibrary.csproj": {
-              "projectPath": "C:\\Users\\Francisco\\Projetos\\Fitness\\src\\Fitness.ServiceLibrary\\Fitness.ServiceLibrary.csproj"
+            "/home/ff/Projects/Fitness/src/Fitness.ServiceLibrary/Fitness.ServiceLibrary.csproj": {
+              "projectPath": "/home/ff/Projects/Fitness/src/Fitness.ServiceLibrary/Fitness.ServiceLibrary.csproj"
             }
           }
         }
@@ -583,11 +576,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -614,6 +602,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[6.0.31, 6.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.31, 6.0.31]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -622,7 +624,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.106/RuntimeIdentifierGraph.json"
       }
     }
   }
