@@ -1,11 +1,22 @@
 # Fitness Full Stack Workout Tracker
 
-made with React and ASP.NET Core
+made with React@18.2.0 and DotNet@8.0.106
 
 ## run the application
 
+### API 
 ```
 dotnet watch --project src/Fitness.Api/Fitness.Api.csproj run
+```
+
+### Front
+
+```
+cd front/fitnessfront/
+```
+
+```
+npm start
 ```
 
 ### to create react app
