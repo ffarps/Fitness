@@ -2,7 +2,7 @@ function WorkoutHomeSection() {
   return (
     <div className="Workout">
       <div className="container mx-auto p-3">
-        <h1 className="text-3xl font-bold mb-4">Workouts Section</h1>
+        <h1 className="text-3xl font-bold mb-4">Some of the Workouts we offer</h1>
         
         {/* Workouts Section */}
         <section className="bg-gray-200 p-6 shadow-md">
