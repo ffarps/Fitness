@@ -1,6 +1,6 @@
 # Fitness Full Stack Workout Tracker
 
-made with `React@18.2.0` and `DotNet@8.0.106`
+made with `React`@18.2.0 and `DotNet`@8.0.106
 
 ## run the application
 
