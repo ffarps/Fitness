@@ -1,13 +1,22 @@
-# fitnessFullstack
+# Fitness Full Stack Workout Tracker
 
-A Fitness Tracker made with React and ASP.NET Core
+made with React and ASP.NET Core
 
-### run the application
+## run the application
 
 ```
 dotnet watch --project src/Fitness.Api/Fitness.Api.csproj run
 ```
-<code>nano</code>
+
+### to create react app
+
+```
+npm install create-react-app
+```
+
+```
+npx create-react-app fitnessfront --template typescript
+```
 
 #### What I've Learned
 
@@ -16,11 +25,6 @@ dotnet watch --project src/Fitness.Api/Fitness.Api.csproj run
 #### Architecture diagram
 ![alt text](arch.drawio.png)
 
-### to create react app
-
-npm install create-react-app
-
-npx create-react-app fitnessfront --template typescript
 
 ### Design made with figma
 - figma link url
