@@ -15,7 +15,8 @@ function Header({ selectedPage, setSelectedPage }: Props) {
           <div className="flex items-center gap-16">
             <img src={logo} alt="logo" width={150} />
             <div className="flex items-center gap-8">
-              <Link
+              <Link></Link>
+              {/* <Link
                 page="Workouts"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
@@ -29,7 +30,7 @@ function Header({ selectedPage, setSelectedPage }: Props) {
                 page="Contact us"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-              />
+              /> */}
             </div>
           </div>
 
