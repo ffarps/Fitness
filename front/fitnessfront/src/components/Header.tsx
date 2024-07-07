@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.png";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { SelectedPage } from "../shared/types";
 
 type Props = {
@@ -23,14 +23,16 @@ const Header = ({ selectedPage, setSelectedPage }: Props) => {
       <div className="container mx-auto p-3">
         <div className="flex items-center justify-between w-5/6 mx-auto">
           <div className="flex items-center gap-16">
-            <img src={logo} alt="logo" width={150} />
+            <Link to="/" onClick={() => setSelectedPage(SelectedPage.Home)}>
+              <img src={logo} alt="logo" width={150} />
+            </Link>
             <div className="flex items-center gap-8">
-              {pages.map((page) => (
+              {pages.slice(1).map((page) => (
                 <Link
                   key={page.name}
                   to={page.path}
-                  onClick={()=>selectedPage}
-                  className={selectedPage===page.name ? 'selected' : ''}
+                  onClick={() => setSelectedPage(page.name)}
+                  className={selectedPage === page.name ? 'selected' : ''}
                 >
                   {page.name}
                 </Link>

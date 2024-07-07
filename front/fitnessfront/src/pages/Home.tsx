@@ -2,7 +2,7 @@ import { useState } from "react";
 import banner from "../assets/anastase-maragos-9dzWZQWZMdE-unsplash 2.png";
 import Header from "../components/Header";
 import { SelectedPage } from "../shared/types";
-function Home() {
+const Home=()=> {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
   );
