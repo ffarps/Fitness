@@ -9,7 +9,7 @@ const Workouts = () => {
     return(
     <div className="Workouts">
         <Header selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-            <div>Workouts</div>;
+            <div>Workouts</div>
     </div>
     ) 
 };
