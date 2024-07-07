@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.png";
-import Link from "./Link";
+import {Link} from 'react-router-dom';
 import { SelectedPage } from "../shared/types";
 
 type Props = {
@@ -9,13 +9,13 @@ type Props = {
 };
 
 const Header = ({ selectedPage, setSelectedPage }: Props) => {
-  const pages: SelectedPage[] = [
-    SelectedPage.Home,
-    SelectedPage.Workouts,
-    SelectedPage.Profile,
-    SelectedPage.ContactUs,
-    SelectedPage.Login,
-    SelectedPage.Signup
+  const pages: { name: SelectedPage, path: string }[] = [
+    { name: SelectedPage.Home, path: '/' },
+    { name: SelectedPage.Workouts, path: '/workouts' },
+    { name: SelectedPage.Profile, path: '/profile' },
+    { name: SelectedPage.ContactUs, path: '/contact-us' },
+    { name: SelectedPage.Login, path: '/login' },
+    { name: SelectedPage.Signup, path: '/signup' }
   ];
 
   return (
@@ -27,19 +27,16 @@ const Header = ({ selectedPage, setSelectedPage }: Props) => {
             <div className="flex items-center gap-8">
               {pages.map((page) => (
                 <Link
-                  key={page}
-                  page={page}
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
+                  key={page.name}
+                  to={page.path}
+                  onClick={()=>selectedPage}
+                  className={selectedPage===page.name ? 'selected' : ''}
+                >
+                  {page.name}
+                </Link>
               ))}
             </div>
           </div>
-
-          {/* <div className="flex items-center gap-8">
-            <p>Sign in</p>
-            <p>Log in</p>
-          </div> */}
         </div>
       </div>
     </div>
