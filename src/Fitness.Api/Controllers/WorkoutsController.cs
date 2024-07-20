@@ -16,5 +16,20 @@ namespace Fitness.Api.Controllers
             businessLogic.SaveWorkout(workoutEntity);
             return Ok();
         }
-    }
+        //  [HttpPost]
+        // public IActionResult CreateWorkout(Workout workout)
+        // {
+        //     // Logic to create a workout
+        //     return Ok();
+        // }
+
+        // [HttpGet]
+        // public IActionResult GetWorkoutsByUser(int userId)
+        // {
+        //     // Logic to retrieve all workouts for a user
+        //     return Ok();
+        // }
+
+        // Additional methods for updating and deleting workouts
+        }
 }
