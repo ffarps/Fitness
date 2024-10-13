@@ -9,7 +9,7 @@ namespace Fitness.Api.Controllers
     [ApiController]
     public class WorkoutsController : ControllerBase
     {
-        [HttpGet]
+        [HttpPost]
         public IActionResult AddNewWorkout([FromQuery]WorkoutEntity workoutEntity)
         {
             Workout.SaveWorkout(workoutEntity);
