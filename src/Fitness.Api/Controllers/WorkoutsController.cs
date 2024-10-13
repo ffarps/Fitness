@@ -9,14 +9,14 @@ namespace Fitness.Api.Controllers
     [ApiController]
     public class WorkoutsController : ControllerBase
     {
-        [HttpPost]
+        [HttpPost("AddNewWorkout")]
         public IActionResult AddNewWorkout([FromQuery]WorkoutEntity workoutEntity)
         {
             Workout.SaveWorkout(workoutEntity);
             return Ok(new { messague = "Workout created successfully" });
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("getWorkout/{id}")]
         public IActionResult GetWorkout(int id)
         {
             var businessLogic = new Workout();
@@ -27,14 +27,14 @@ namespace Fitness.Api.Controllers
             }
             return Ok(workout);
         }
-        [HttpGet]
+        [HttpGet("GetAllWorkouts")]
         public IActionResult GetAllWorkouts()
         {
             var businessLogic = new Workout();
             var workouts = businessLogic.GetAllWorkouts();
             return Ok(workouts);
         }
-        [HttpPut("{id}")]
+        [HttpPut("UpdateWorkout/{id}")]
         public IActionResult UpdateWorkout(int id, [FromBody]WorkoutEntity workoutEntity)
         {
             var businessLogic = new Workout();
@@ -45,7 +45,7 @@ namespace Fitness.Api.Controllers
             }
             return Ok(new {messague = "Workout updated successfully"});
         }
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteWorkout/{id}")]
         public IActionResult DeleteWorkout(int id)
         {
             var businessLogic = new Workout();
