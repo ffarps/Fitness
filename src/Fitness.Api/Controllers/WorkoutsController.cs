@@ -12,9 +12,8 @@ namespace Fitness.Api.Controllers
         [HttpGet]
         public IActionResult AddNewWorkout([FromQuery]WorkoutEntity workoutEntity)
         {
-            var businessLogic = new Workout();
-            businessLogic.SaveWorkout(workoutEntity);
-            return Ok()(new messague?"Workout created successfully":"Workout not created");
+            Workout.SaveWorkout(workoutEntity);
+            return Ok(new { messague = "Workout created successfully" });
         }
 
         [HttpGet("{id}")]
@@ -22,7 +21,7 @@ namespace Fitness.Api.Controllers
         {
             var businessLogic = new Workout();
             var workout = businessLogic.GetWorkoutById(id);
-            if workout == null
+            if (workout == null)
             {
                 return NotFound(new {messague = "Workout not found"});
             }
@@ -57,4 +56,5 @@ namespace Fitness.Api.Controllers
             }
             return Ok(new {messague = "Workout deleted successfully"});
         }
+    }
 }
