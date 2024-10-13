@@ -14,22 +14,47 @@ namespace Fitness.Api.Controllers
         {
             var businessLogic = new Workout();
             businessLogic.SaveWorkout(workoutEntity);
-            return Ok();
+            return Ok()(new messague?"Workout created successfully":"Workout not created");
         }
-        //  [HttpPost]
-        // public IActionResult CreateWorkout(Workout workout)
-        // {
-        //     // Logic to create a workout
-        //     return Ok();
-        // }
 
-        // [HttpGet]
-        // public IActionResult GetWorkoutsByUser(int userId)
-        // {
-        //     // Logic to retrieve all workouts for a user
-        //     return Ok();
-        // }
-
-        // Additional methods for updating and deleting workouts
+        [HttpGet("{id}")]
+        public IActionResult GetWorkout(int id)
+        {
+            var businessLogic = new Workout();
+            var workout = businessLogic.GetWorkoutById(id);
+            if workout == null
+            {
+                return NotFound(new {messague = "Workout not found"});
+            }
+            return Ok(workout);
+        }
+        [HttpGet]
+        public IActionResult GetAllWorkouts()
+        {
+            var businessLogic = new Workout();
+            var workouts = businessLogic.GetAllWorkouts();
+            return Ok(workouts);
+        }
+        [HttpPut("{id}")]
+        public IActionResult UpdateWorkout(int id, [FromBody]WorkoutEntity workoutEntity)
+        {
+            var businessLogic = new Workout();
+            var UpdateWorkout =businessLogic.UpdateWorkout(id,workoutEntity);
+            if (UpdateWorkout == null)
+            {
+                return NotFound(new {messague = "Workout not found"});
+            }
+            return Ok(new {messague = "Workout updated successfully"});
+        }
+        [HttpDelete("{id}")]
+        public IActionResult DeleteWorkout(int id)
+        {
+            var businessLogic = new Workout();
+            var isDeleted = businessLogic.DeleteWorkout(id);
+            if (!isDeleted)
+            {
+                return NotFound(new {messague = "Workout not found"});
+            }
+            return Ok(new {messague = "Workout deleted successfully"});
         }
 }

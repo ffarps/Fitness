@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0bn/JdxjFwNz2lFnzhhLMVIy0P8fS20bVtq/VHyshkiGKaS/X14m9W6BxiOs/kY0kQmG/5yd/IKhNqmrUhf43g==",
+  "dgSpecHash": "8OWrZP54PklncitGcgLmGQ7iUE0VuSmRr1TVzFFL16ebPHi506YkE7MVk53mCSgsOZd4GHp/ClcakzDrtGuaOA==",
   "success": true,
   "projectFilePath": "/home/ff/Projects/Fitness/src/Fitness.ServiceLibrary/Fitness.ServiceLibrary.csproj",
   "expectedPackageFiles": [
-    "/home/ff/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
+    "/home/ff/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
   ],
   "logs": []
 }
